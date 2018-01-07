@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="myspotstylesheet.css">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="myspot.js"></script>
+  <script>
+  /* onclick event for button Park*/ 
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "U bent aangemeld";
+  }
+
+  </script>
+</head>
+<body>
+<div class="main"> 
+<h1>MySpot</h1>
+<div class="navbar">
+<ul>
+<li><a class="current" href="index.html">Home</a></li>
+<li><a href="reserveren.html">Reserveren</a></li>
+<li><a href="share.html">Delen</a></li>
+<li><a href="map.html">Map</a></li>
+<li><a href="profile.html">Profiel</a></li>
+</ul>
+
+</div>
+<div id="button">
+<button class="button" onclick="myFunction()"><a href="url" target="blank">Parkeren</a></button><br/><br/><br/>
+<button class="login" onclick="login()"><a href="parklogin.html" target="blank">Login</a></button><br/><br/>
+</div>
+<br/>
+<p id="demo"></p>
+
+
+
+<div class="car">
+<img alt="car" src="images/car.png"> 
+</div>
+</div> <!--end of "main"-->
+<footer>
+<p class="footer">myspot parking inc.</p>
+<p>hello@myspot.nl</p>
+</footer>
+
+</body>
+</html>

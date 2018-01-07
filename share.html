@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="myspotstylesheet.css">
+<link rel="icon" type="image/png" href="images/favicon.ico">
+<script src="myspot.js"></script>
+</head>
+<body>
+<div class="main">
+<h1>MySpot</h1>
+<div class="navbar">
+<ul>
+<li><a class="current" href="index.html">Home</a></li>
+<li><a href="reserveren.html">Reserveren</a></li>
+<li><a href="share.html">Delen</a></li>
+<li><a href="map.html">Map</a></li>
+<li><a href="profile.html">Profiel</a></li>
+</ul>
+
+</div>
+<div class="reserveren">
+	<h2>Kies een datum</h2>
+	<p> Date: <select id="dropdown" onchange="myFunction()">
+		<option value="maandag">Maandag 01/01/2018</option>
+		<option value="dinsdag">Dinsdag 02/01/2018</option>
+		<option value="woensdag">Woensdag 03/01/2018</option>
+		<option value="donderdag">Donderdag 04/01/2018</option>
+		<option value="vrijdag">Vrijdag 05/01/2018</option>
+		<option value="zaterdag">Zaterdag 06/01/2018</option>
+		<option value="zondag">Zondag 07/01/2018</option>
+	</select></p>
+	
+	<p id="beschikbaarheid"></p> </br></br>
+	
+<button class="login" onclick="myDeelFunction()">Deel</button>
+</div> <!--end of "main" div-->
+</body>
+</html>
